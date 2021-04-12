@@ -55,6 +55,7 @@
     "webpack-merge": "*"
   },
   "dependencies": {
+    "devicon": "^2.11.0",
     "prop-types": "*",
     "react": "*",
     "react-dom": "*"

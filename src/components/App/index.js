@@ -2,12 +2,17 @@
 import React from 'react';
 
 // == Import
+import Header from '../Header';
+import Main from '../Main';
+import Footer from '../Footer';
 import './styles.css';
 
 // == Composant
 const App = () => (
   <div className="app">
-    <h1>Composant : App</h1>
+    <Header />
+    <Main />
+    <Footer />
   </div>
 );
 
