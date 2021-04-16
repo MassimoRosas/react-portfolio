@@ -2,4 +2,10 @@
   position: relative;
   top: 6em;
   z-index: 1;
+
+  .main-section {
+    min-height: 85vh;
+    margin-bottom: 2em;
+    background-color: green;
+  }
 }

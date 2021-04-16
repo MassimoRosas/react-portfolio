@@ -1,2 +1,15 @@
-.app {
+@import '../../styles/reset';
+@import '../../styles/vars';
+
+body {
+
+  #root {
+
+
+    .app {
+      min-width: 320px;
+      width: auto;
+      margin: auto;
+    }
+  }
 }

@@ -1,0 +1,28 @@
+.main {
+
+  .main-section-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .home-description {
+      margin-bottom: 1em;
+
+      .home-title {
+        font-size: 30px;
+      }
+
+      .home-subtitle {
+
+      }
+    }
+
+    .home-avatar {
+      border-radius: 50em;
+      border: 3px solid lightgrey;
+      width: 15em;
+    }
+  }
+
+}
