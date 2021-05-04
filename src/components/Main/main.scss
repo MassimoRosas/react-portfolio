@@ -1,11 +1,9 @@
 .main {
-  position: relative;
-  top: 6em;
   z-index: 1;
 
   .main-section {
     min-height: 100vh;
     margin-bottom: 2em;
-    background-color: green;
+    background-color: transparent;
   }
 }
