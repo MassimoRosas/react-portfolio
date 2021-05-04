@@ -1,0 +1,31 @@
+.main-section-skills {
+  padding: 1em;
+
+
+  .skills-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    .skills-list-item {
+      display: flex;
+      align-items: center;
+      min-width: 130px;
+      margin-bottom: 1em;
+
+      .skills-list-item-icon {
+        font-size: 3em;
+        margin-right: 0.3em;
+      }
+
+      .skills-list-item-description {
+
+      }
+    }
+  }
+}
