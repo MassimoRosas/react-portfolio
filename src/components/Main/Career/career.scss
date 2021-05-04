@@ -1,0 +1,74 @@
+.main-section-career {
+  padding: 1em;
+
+  .career-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+
+  .career-oclock {
+    margin-bottom: 3em;
+
+    .career-logo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 1em 0;
+  
+      .career-logo-img {
+        width: 10em;
+      }
+  
+      .career-logo-title {
+        text-align: center;
+        font-size: 1.25em;
+      }
+    }
+  
+    .career-description {
+      margin-bottom: 1em;
+  
+      .career-description-title {
+        font-weight: bold;
+        margin-bottom: 0.25em;
+      }
+  
+      .career-description-subtitle {
+  
+      }
+  
+      .career-description-single {
+  
+      }
+    }
+  }
+
+  .career-opquast {
+
+    .career-description-badge {
+      display: block;
+      width: 10em;
+      margin: 1em auto;
+      
+    }
+
+    .career-description-title {
+      font-weight: bold;
+      margin-bottom: 0.25em;
+    }
+
+    .career-description-subtitle {
+
+    }
+
+    .career-description-single {
+
+    }
+
+    .career-description-result {
+      font-style: italic;
+      margin-top: 0.25em;
+    }
+  }
+}
