@@ -4,7 +4,7 @@ import './home.scss';
 import avatar from '../../../assets/images/avatar.png';
 
 const Home = () => (
-  <section className="main-section main-section-home">
+  <section className="main-section main-section-home" id="home">
     <div className="home-description">
       <h1 className="home-title">Massimo Rosas</h1>
       <h3 className="home-subtitle">Développeur Frontend</h3>

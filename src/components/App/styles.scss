@@ -11,6 +11,11 @@ body {
       margin: auto;
       overflow: auto;
       position: relative;
+      font-family: 'Play', sans-serif;
+    }
+
+    .app-blurred {
+      filter: blur(5px);
     }
 
     .app::before {

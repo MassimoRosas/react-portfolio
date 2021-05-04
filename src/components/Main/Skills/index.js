@@ -3,7 +3,7 @@ import React from 'react';
 import './skills.scss';
 
 const Skills = () => (
-  <section className="main-section main-section-skills">
+  <section className="main-section main-section-skills" id="skills">
     <h2 className="skills-title">Compétences</h2>
     <ul className="skills-list">
       <li className="skills-list-item"><i className="devicon-html5-plain skills-list-item-icon" /><span className="skills-list-item-description">HTML5</span></li>

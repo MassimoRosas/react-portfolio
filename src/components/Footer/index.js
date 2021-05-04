@@ -3,7 +3,7 @@ import React from 'react';
 import './footer.scss';
 
 const Footer = () => (
-  <footer className="footer">
+  <footer className="footer" id="footer">
     <h2 className="footer-title">Liens</h2>
     <div className="footer-links">
       <a href="https://www.linkedin.com/in/massimo-rosas/" target="_blank" rel="noreferrer"><i className="devicon-linkedin-plain footer-logo" /> </a>

@@ -8,7 +8,7 @@ import reactGitHubApi from '../../../assets/images/reactGitHubApi.png';
 import reactTodoList from '../../../assets/images/reactTodoList.png';
 
 const Projects = () => (
-  <section className="main-section main-section-projects">
+  <section className="main-section main-section-projects" id="projects">
     <h2 className="projects-title">Projets</h2>
     <div className="projects-highlight">
       <img className="projects-highlight-preview" src={FeelBetter} alt="Aperçu Feel Better" />
