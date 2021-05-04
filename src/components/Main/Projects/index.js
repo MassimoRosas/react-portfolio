@@ -26,6 +26,7 @@ const Projects = () => (
           <li className="projects-highlight-description-list-item">mocha et chai pour les tests unitaires</li>
         </ul>
       </div>
+      <iframe src="https://www.youtube.com/embed/sSp3eACAeU0?start=2365" title="Présentation YouTube Feel Better" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
     </div>
     <div className="projects-list-container">
       <ul className="projects-list">
