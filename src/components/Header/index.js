@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import './header.scss';
 
 const Header = () => {
-  const [toggleNav, setToggleNav] = useState('closed');
+  const [toggleNav, setToggleNav] = useState(false);
 
   return (
     <header className="header">
@@ -19,10 +19,10 @@ const Header = () => {
             event.currentTarget.classList.toggle('opened');
 
             if (event.currentTarget.classList.contains('opened')) {
-              setToggleNav('opened');
+              setToggleNav(true);
             }
             else {
-              setToggleNav('closed');
+              setToggleNav(false);
             }
           }}
           aria-label="Main Menu"
@@ -33,14 +33,64 @@ const Header = () => {
             <path className="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
           </svg>
         </button>
-        {toggleNav === 'opened'
+        {toggleNav
         && (
           <ul className="header-navbar-links">
-            <li className="header-navbar-links-single"><a href="#home">Présentation</a></li>
-            <li className="header-navbar-links-single"><a href="#career">Parcours</a></li>
-            <li className="header-navbar-links-single"><a href="#skills">Compétences</a></li>
-            <li className="header-navbar-links-single"><a href="#projects">Projets</a></li>
-            <li className="header-navbar-links-single"><a href="#footer">Liens</a></li>
+            <a href="#home">
+              <li
+                className="header-navbar-links-single"
+                onClick={() => {
+                  document.querySelector('.menu').classList.toggle('opened');
+                  setToggleNav(false);
+                }}
+              >
+                Présentation
+              </li>
+            </a>
+            <a href="#career">
+              <li
+                className="header-navbar-links-single"
+                onClick={() => {
+                  document.querySelector('.menu').classList.toggle('opened');
+                  setToggleNav(false);
+                }}
+              >
+                Parcours
+              </li>
+            </a>
+            <a href="#skills">
+              <li
+                className="header-navbar-links-single"
+                onClick={() => {
+                  document.querySelector('.menu').classList.toggle('opened');
+                  setToggleNav(false);
+                }}
+              >
+                Compétences
+              </li>
+            </a>
+            <a href="#projects">
+              <li
+                className="header-navbar-links-single"
+                onClick={() => {
+                  document.querySelector('.menu').classList.toggle('opened');
+                  setToggleNav(false);
+                }}
+              >
+                Projets
+              </li>
+            </a>
+            <a href="#footer">
+              <li
+                className="header-navbar-links-single"
+                onClick={() => {
+                  document.querySelector('.menu').classList.toggle('opened');
+                  setToggleNav(false);
+                }}
+              >
+                Liens
+              </li>
+            </a>
           </ul>
         )}
       </nav>
