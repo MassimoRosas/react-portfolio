@@ -11,20 +11,22 @@
   .skills-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 
     .skills-list-item {
       display: flex;
       align-items: center;
       min-width: 130px;
+      width: 9em;
       margin-bottom: 1em;
 
       .skills-list-item-icon {
-        font-size: 3em;
+        font-size: 2em;
         margin-right: 0.3em;
       }
 
       .skills-list-item-description {
-
+        max-width: 2em;
       }
     }
   }
