@@ -25,6 +25,25 @@ const Home = () => (
         <p className="home-data-single-description">06.24.12.36.94</p>
       </li>
     </ul>
+    <div className="home-presentation card">
+      <p className="home-presentation-single">
+        A la base détenteur d'un BTS Technicien
+        Biochimiste / Microbiologiste, j'ai choisi
+        de me reconvertir dans le développement web,
+        plus particulièrement dans le développement frontend.
+      </p>
+      <p className="home-presentation-single">
+        Avant cela, j'ai travaillé trois ans en grande
+        distribution, d'abord en employé libre-service, puis en responsable-adjoint de secteur frais
+        en Haute-Savoie, où j'ai toujours vécu.
+        J'ai ensuite décidé de m'installer en Ille-et-Vilaine
+        autour de Rennes.
+      </p>
+      <p className="home-presentation-single">
+        J'ai pu acquérir de très bonnes compétences en travail d'équipe,
+        en organisation et en relation client.
+      </p>
+    </div>
   </section>
 );
 

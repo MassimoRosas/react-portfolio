@@ -24,7 +24,8 @@
 
         .projects-highlight-description-title {
           text-align: center;
-          font-size: 1.25em;
+          font-size: 1.5em;
+          margin-bottom: 1em;
         }
 
         .projects-highlight-description-subtitle {
@@ -33,14 +34,14 @@
         }
 
         .projects-highlight-description-single {
-
+          margin: 0.5em 0;
         }
 
         .projects-highlight-description-list {
           list-style: disc;
 
           .projects-highlight-description-list-item {
-            margin-left: 1em;
+            margin: 0.5em 0 0.5em 1em;
           }
         }
       }

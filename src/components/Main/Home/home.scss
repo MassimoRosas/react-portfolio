@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 1em;
 
     .home-description {
       margin-bottom: 1em;
@@ -47,6 +48,15 @@
         .home-data-single-description {
 
         }
+      }
+    }
+
+    .home-presentation {
+      padding: 1em;
+      margin-top: 2em;
+
+      .home-presentation-single {
+        margin: 0.5em 0;
       }
     }
   }

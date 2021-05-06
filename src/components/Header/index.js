@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header-left-container">
-        <i className="header-logo devicon-react-original" />
+        <a href="#home"><i className="header-logo devicon-react-original" /> </a>
         <h2 className="header-title">Massimo Rosas</h2>
       </div>
       <nav className="header-navbar">
