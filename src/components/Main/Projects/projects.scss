@@ -90,12 +90,34 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
 
   .main {
 
     .main-section-projects {
-      padding: 0 5em;
+      
+      .projects-container {
+        display: flex;
+        justify-content: space-between;
+
+        .projects-highlight {
+          width: 55%;
+        }
+
+        .projects-list-container {
+          margin: 0;
+          width: 40%;
+
+          .projects-list {
+            display: flex;
+            justify-content: space-around;
+
+            .projects-list-item {
+              width: 45%;
+            }
+          }
+        }
+      }
     }
   }
 }

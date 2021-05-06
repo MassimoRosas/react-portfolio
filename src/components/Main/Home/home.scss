@@ -77,7 +77,6 @@
   .main {
 
     .main-section {
-      padding: 0 5em;
     }
 
     .main-section-home {
@@ -99,10 +98,11 @@
           margin: auto;
         }
       }
-
-      
     }
   }
+}
+
+@media screen and (width: 1024px) {
 
   
 }

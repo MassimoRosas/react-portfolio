@@ -48,3 +48,20 @@
     }
   }
 }
+
+@media screen and (min-width: 1440px) {
+
+  .main {
+
+    .main-section-skills {
+
+      .skills-list {
+        justify-content: flex-start;
+
+        .skills-list-item {
+          margin: 0.5em 0.5em;
+        }
+      }
+    }
+  }
+}
