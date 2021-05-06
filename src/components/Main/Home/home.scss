@@ -25,38 +25,47 @@
       }
     }
 
-    .home-avatar {
-      border-radius: 50em;
-      border: 3px solid lightgrey;
-      width: 15em;
-    }
+    .home-first-container {
 
-    .home-data {
-
-      .home-data-single {
+      .home-second-container {
         display: flex;
+        flex-direction: column;
         align-items: center;
-        margin: 1em 0;
 
-        .home-data-single-logo {
-          margin-right: 1em;
-          display: block;
-          width: 1em;
-          text-align: center;
+        .home-avatar {
+          border-radius: 50em;
+          border: 3px solid lightgrey;
+          width: 15em;
         }
-
-        .home-data-single-description {
-
+    
+        .home-data {
+    
+          .home-data-single {
+            display: flex;
+            align-items: center;
+            margin: 1em 0;
+    
+            .home-data-single-logo {
+              margin-right: 1em;
+              display: block;
+              width: 1em;
+              text-align: center;
+            }
+    
+            .home-data-single-description {
+    
+            }
+          }
         }
       }
-    }
 
-    .home-presentation {
-      padding: 1em;
-      margin-top: 2em;
-
-      .home-presentation-single {
-        margin: 0.5em 0;
+      .home-presentation {
+        padding: 1em;
+        margin-top: 2em;
+  
+        .home-presentation-single {
+          margin: 0.5em 0;
+        }
       }
     }
   }
