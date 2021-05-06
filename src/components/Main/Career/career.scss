@@ -31,7 +31,7 @@
   
       .career-description-title {
         font-weight: bold;
-        margin-bottom: 0.25em;
+        margin: 0.5em 0;
       }
   
       .career-description-subtitle {
@@ -53,9 +53,16 @@
       
     }
 
+    .career-logo-title {
+      display: block;
+      text-align: center;
+      font-size: 1.25em;
+      margin-bottom: 0.5em;
+    }
+
     .career-description-title {
       font-weight: bold;
-      margin-bottom: 0.25em;
+      margin: 0.5em 0;
     }
 
     .career-description-subtitle {
@@ -68,7 +75,32 @@
 
     .career-description-result {
       font-style: italic;
-      margin-top: 0.25em;
+      margin-top: 0.5em;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  .main {
+
+    .main-section-career {
+      
+      .career-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .career-oclock {
+          width: 45%;
+          margin: 0;
+        }
+
+        .career-opquast {
+          width: 45%;
+          margin: 0;
+        }
+      }
     }
   }
 }

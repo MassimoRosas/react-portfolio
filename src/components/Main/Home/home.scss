@@ -62,3 +62,38 @@
   }
 
 }
+
+@media screen and (min-width: 768px) {
+
+  .main {
+
+    .main-section {
+      padding: 0 5em;
+    }
+
+    .main-section-home {
+
+      .home-first-container {
+        display: flex;
+        align-items: center;
+
+        .home-second-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          width: 50%;
+        }
+
+        .home-presentation {
+          width: 50%;
+          margin: auto;
+        }
+      }
+
+      
+    }
+  }
+
+  
+}
