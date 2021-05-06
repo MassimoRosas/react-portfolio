@@ -23,6 +23,10 @@
     }
   }
 
+  .no-burger {
+    display: none;
+  }
+
   
 
   .header-navbar {
@@ -86,6 +90,38 @@
 
       .header-navbar-links-single:hover {
         background-color: black;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  .header {
+
+    .header-navbar {
+      display: flex;
+      align-items: center;
+
+      .menu {
+        display: none;
+      }
+    }
+
+    .no-burger {
+      display: flex;
+
+      .header-navbar-links-single {
+        padding: 0.5em;
+        border: solid 1px transparent;
+      }
+
+      a > .header-navbar-links-single:hover {
+        background: rgba(0,0,0,80%);
+        padding: 0.5em;
+        border-radius: 0.5em;
+        border: white 1px solid;
+        box-shadow: 5px 5px 10px 8px rgba(0, 0, 0, 50%);
       }
     }
   }
