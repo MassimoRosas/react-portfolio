@@ -110,6 +110,7 @@
 
       .career-title {
         font-size: 30px;
+        --text-divider-gap: 2rem;
       }
       
       .career-container {
@@ -137,6 +138,7 @@
     .main-section-career {
       .career-title {
         font-size: 35px;
+        --text-divider-gap: 2.5rem;
       }
     }
   }
@@ -148,6 +150,7 @@
     .main-section-career {
       .career-title {
         font-size: 40px;
+        --text-divider-gap: 3rem;
       }
     }
   }

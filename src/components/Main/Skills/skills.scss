@@ -65,6 +65,7 @@
 
       .skills-title {
         font-size: 30px;
+        --text-divider-gap: 2rem;
       }
 
       .skills-list {
@@ -85,6 +86,7 @@
     .main-section-skills {
       .skills-title {
         font-size: 35px;
+        --text-divider-gap: 2.5rem;
       }
     }
   }
@@ -98,6 +100,7 @@
 
       .skills-title {
         font-size: 40px;
+        --text-divider-gap: 3rem;
       }
 
       .skills-list {
