@@ -8,20 +8,26 @@
     padding: 1em;
 
     .home-description {
-      margin-bottom: 1em;
+      margin-bottom: 2em;
 
       .home-title {
-        font-size: 50px;
+        font-size: 60px;
         text-align: center;
         margin: 0.5em 0;
+        font-weight: bold;
+        text-shadow: 0.2em 0.2em 0.2em black;
       }
 
       .home-subtitle {
         text-align: center;
+        font-size: 22.5px;
+        text-shadow: 0.2em 0.2em 0.2em black;
       }
 
       .home-paragraph {
         text-align: center;
+        font-size: 20px;
+        text-shadow: 0.2em 0.2em 0.2em black;
       }
     }
 
@@ -36,9 +42,11 @@
           border-radius: 50em;
           border: 3px solid lightgrey;
           width: 15em;
+          box-shadow: 0.5em 0.5em 1.5em black;
         }
     
         .home-data {
+          text-shadow: 0.2em 0.2em 0.2em black;
     
           .home-data-single {
             display: flex;

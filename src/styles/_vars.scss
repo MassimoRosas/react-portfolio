@@ -1,7 +1,9 @@
 .card {
   background: rgba(0,0,0,30%);
+  backdrop-filter: blur(4px);
   border-radius: 0.5em;
-  border: solid 2px rgba(0,0,0,60%);
+  border: solid 2px rgba(255,255,255,10%);
   padding: 1em;
-  box-shadow: 5px 5px 10px 8px rgba(0, 0, 0, 50%);
+  box-shadow: 5px 5px 12px 8px rgba(0, 0, 0, 50%);
+  font-size: 1.25em;
 }

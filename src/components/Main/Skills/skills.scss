@@ -4,8 +4,10 @@
 
   .skills-title {
     text-align: center;
-    font-size: 2em;
+    font-size: 2.5em;
     margin-bottom: 1em;
+    text-shadow: 0.2em 0.2em 0.2em black;
+    font-weight: bold;
   }
 
   .skills-list {
@@ -13,20 +15,23 @@
     flex-wrap: wrap;
     justify-content: space-around;
 
+    .card {
+      padding: 1em 0.5em;
+    }
+
     .skills-list-item {
       display: flex;
       align-items: center;
       min-width: 130px;
-      width: 9em;
+      width: 7em;
       margin-bottom: 1em;
 
       .skills-list-item-icon {
-        font-size: 2em;
+        font-size: 1em;
         margin-right: 0.3em;
       }
 
       .skills-list-item-description {
-        max-width: 2em;
       }
     }
   }
@@ -39,10 +44,11 @@
     .main-section-skills {
 
       .skills-list {
-        justify-content: flex-start;
+        justify-content: space-between;
 
         .skills-list-item {
           margin: 0.25em 0.25em;
+          font-size: 1.25em;
         }
       }
     }
