@@ -2,11 +2,31 @@
   padding: 1em;
 
   .career-title {
-    text-align: center;
-    font-size: 2.5em;
-    margin-bottom: 1em;
     text-shadow: 0.2em 0.2em 0.2em black;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    font-size: var(--text-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    --text-divider-gap: 1rem;
+    margin-bottom: 2em;
+    font-size: 20px;
+
+    &::before, &::after {
+      content: '';
+      height: 1px;
+      background-color: silver;
+      flex-grow: 1;
+    }
+
+    &::before {
+      margin-right: var(--text-divider-gap);
+    }
+  
+    &::after {
+      margin-left: var(--text-divider-gap);
+    }
   }
 
   .career-oclock {
@@ -87,6 +107,10 @@
   .main {
 
     .main-section-career {
+
+      .career-title {
+        font-size: 30px;
+      }
       
       .career-container {
         display: flex;
@@ -102,6 +126,28 @@
           width: 47.5%;
           margin: 0;
         }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  .main {
+    .main-section-career {
+      .career-title {
+        font-size: 35px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+
+  .main {
+    .main-section-career {
+      .career-title {
+        font-size: 40px;
       }
     }
   }
