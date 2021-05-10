@@ -19,6 +19,11 @@
       &:hover {
         color: black;
         text-shadow: 0.05em 0.05em 0.3em rgba(255,255,255,50%);
+        transition: all ease-in-out 0.25s;
+      }
+
+      &:not(:hover) {
+        transition: all ease-in-out 0.25s;
       }
     }
   
@@ -88,13 +93,25 @@
       border-radius: 0.5em;
       border: white 1px solid;
       box-shadow: 5px 5px 10px 8px rgba(0, 0, 0, 50%);
+      opacity: 0;
+      animation: transition 0.5s ease-in-out 0s forwards;
+
+      @keyframes transition {
+        0% { top: 0; opacity: 0; }
+        100% { top: 5.1em; opacity: 1; }
+      }
 
       .header-navbar-links-single {
         padding: 1em;
       }
 
       .header-navbar-links-single:hover {
+        transition: all ease-in-out 0.25s;
         background-color: black;
+      }
+
+      .header-navbar-links-single:not(:hover) {
+        transition: all ease-in-out 0.25s;
       }
     }
   }
@@ -122,13 +139,13 @@
       }
 
       a > .header-navbar-links-single:hover {
-        // background: rgba(0,0,0,80%);
-        // padding: 0.5em;
-        // border-radius: 0.5em;
-        // border: white 1px solid;
-        // box-shadow: 5px 5px 10px 8px rgba(0, 0, 0, 50%);
+        transition: all ease-in-out 0.25s;
         color: black;
         text-shadow: 0.05em 0.05em 0.3em rgba(255,255,255,75%);
+      }
+
+      a > .header-navbar-links-single:not(:hover) {
+        transition: all ease-in-out 0.25s;
       }
     }
   }

@@ -32,24 +32,20 @@ const Projects = () => (
       <div className="projects-list-container">
         <ul className="projects-list">
           <li className="projects-list-item card">
-            <img className="projects-list-item-preview" src={reactConverter} alt="react-converter preview" />
+            <a className="projects-list-item-link" href="https://react-converter.vercel.app/" target="_blank" rel="noreferrer"><img className="projects-list-item-preview" src={reactConverter} alt="react-converter preview" /></a>
             <h3 className="projects-list-item-title">React Converter</h3>
-            <a className="projects-list-item-link" href="https://react-converter.vercel.app/" target="_blank" rel="noreferrer">Lien</a>
           </li>
           <li className="projects-list-item card">
-            <img className="projects-list-item-preview" src={reactDashboard} alt="react-dashboard preview" />
+            <a className="projects-list-item-link" href="https://react-social-media-dashboard.vercel.app/" target="_blank" rel="noreferrer"><img className="projects-list-item-preview" src={reactDashboard} alt="react-dashboard preview" /></a>
             <h3 className="projects-list-item-title">React Social Media Dashboard</h3>
-            <a className="projects-list-item-link" href="https://react-social-media-dashboard.vercel.app/" target="_blank" rel="noreferrer">Lien</a>
           </li>
           <li className="projects-list-item card">
-            <img className="projects-list-item-preview" src={reactGitHubApi} alt="react-github-api preview" />
+            <a className="projects-list-item-link" href="https://react-github-api-rosy.vercel.app/" target="_blank" rel="noreferrer"><img className="projects-list-item-preview" src={reactGitHubApi} alt="react-github-api preview" /></a>
             <h3 className="projects-list-item-title">React GitHub API Search</h3>
-            <a className="projects-list-item-link" href="https://react-github-api-rosy.vercel.app/" target="_blank" rel="noreferrer">Lien</a>
           </li>
           <li className="projects-list-item card">
-            <img className="projects-list-item-preview" src={reactTodoList} alt="react-to-do-list preview" />
+            <a className="projects-list-item-link" href="https://react-todo-list-gray.vercel.app/" target="_blank" rel="noreferrer"><img className="projects-list-item-preview" src={reactTodoList} alt="react-to-do-list preview" /></a>
             <h3 className="projects-list-item-title">React To-Do List</h3>
-            <a className="projects-list-item-link" href="https://react-todo-list-gray.vercel.app/" target="_blank" rel="noreferrer">Lien</a>
           </li>
         </ul>
       </div>
