@@ -37,11 +37,11 @@ const Home = () => (
         </p>
         <p className="home-presentation-single">
           Avant cela, j'ai travaillé trois ans en grande
-          distribution, d'abord en employé libre-service,
-          puis en responsable-adjoint de secteur frais
+          distribution, d'abord en tant qu'employé libre-service,
+          puis responsable-adjoint de secteur frais
           en Haute-Savoie, où j'ai toujours vécu.
           J'ai ensuite décidé de m'installer en Ille-et-Vilaine
-          autour de Rennes.
+          à proximité de Rennes.
         </p>
         <p className="home-presentation-single">
           J'ai pu acquérir de très bonnes compétences en travail d'équipe,

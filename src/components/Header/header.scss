@@ -15,6 +15,11 @@
     .header-logo {
       margin-right: 0.3em;
       font-size: 40px;
+
+      &:hover {
+        color: black;
+        text-shadow: 0.05em 0.05em 0.3em rgba(255,255,255,50%);
+      }
     }
   
     .header-title {
@@ -117,11 +122,13 @@
       }
 
       a > .header-navbar-links-single:hover {
-        background: rgba(0,0,0,80%);
-        padding: 0.5em;
-        border-radius: 0.5em;
-        border: white 1px solid;
-        box-shadow: 5px 5px 10px 8px rgba(0, 0, 0, 50%);
+        // background: rgba(0,0,0,80%);
+        // padding: 0.5em;
+        // border-radius: 0.5em;
+        // border: white 1px solid;
+        // box-shadow: 5px 5px 10px 8px rgba(0, 0, 0, 50%);
+        color: black;
+        text-shadow: 0.05em 0.05em 0.3em rgba(255,255,255,75%);
       }
     }
   }

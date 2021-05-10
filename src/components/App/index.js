@@ -10,7 +10,7 @@ import './styles.scss';
 // == Composant
 const App = () => (
   <div className="app">
-    <Header isHeaderActive />
+    <Header />
     <Main />
     <Footer />
   </div>

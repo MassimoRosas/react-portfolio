@@ -1,9 +1,47 @@
 .card {
   background: rgba(0,0,0,30%);
-  backdrop-filter: blur(4px);
+  // backdrop-filter: blur(0px);
   border-radius: 0.5em;
   border: solid 2px rgba(255,255,255,10%);
   padding: 1em;
-  box-shadow: 5px 5px 12px 8px rgba(0, 0, 0, 50%);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 75%);
   font-size: 1.25em;
+  position: relative;
+  background: linear-gradient(160deg, rgba(252, 252, 252, 0.10), rgba(0, 0, 0, 0));
+
+  &::before {
+    content: "";
+    // backdrop-filter: blur(2px);
+    // background-color: rgba(255, 255, 255, .05);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    border: solid 1px transparent;
+    border-radius: 0.5em;
+  }
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .card {
+
+    &::before {
+      -webkit-backdrop-filter: blur(2px);
+      backdrop-filter: blur(2px);
+    }
+    
+  }
+}
+
+/* slightly transparent fallback for Firefox (not supporting backdrop-filter) */
+@supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  .card {
+
+    &::before {
+      background-color: rgba(255, 255, 255, .05);
+    }
+    
+  }
 }
