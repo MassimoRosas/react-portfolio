@@ -30,6 +30,36 @@
     }
   }
 
+  .skills-subtitle {
+    text-shadow: 0.2em 0.2em 0.2em black;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    font-size: var(--text-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    --text-divider-gap: 1rem;
+    margin-bottom: 2em;
+    width: 15em;
+    margin-left: auto;
+    margin-right: auto;
+
+    &::before, &::after {
+      content: '';
+      height: 1px;
+      background-color: silver;
+      flex-grow: 1;
+    }
+
+    &::before {
+      margin-right: var(--text-divider-gap);
+    }
+  
+    &::after {
+      margin-left: var(--text-divider-gap);
+    }
+  }
+
   .skills-list {
     display: flex;
     flex-wrap: wrap;
