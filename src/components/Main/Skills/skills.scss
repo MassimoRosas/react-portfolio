@@ -33,7 +33,7 @@
   .skills-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 
     .card {
       padding: 1em 0.5em;
@@ -45,13 +45,15 @@
       min-width: 130px;
       width: 7em;
       margin-bottom: 1em;
+      justify-content: center;
+
+      .skills-list-item-description {
+        font-size: 0.75em;
+      }
 
       .skills-list-item-icon {
         font-size: 1em;
         margin-right: 0.3em;
-      }
-
-      .skills-list-item-description {
       }
     }
   }
@@ -69,10 +71,10 @@
       }
 
       .skills-list {
-        justify-content: space-between;
+        justify-content: flex-start;
 
         .skills-list-item {
-          margin: 0.25em 0.25em;
+          margin: 0.5em 0.5em;
           font-size: 1.25em;
         }
       }
@@ -87,6 +89,14 @@
       .skills-title {
         font-size: 35px;
         --text-divider-gap: 2.5rem;
+      }
+
+      .skills-list {
+        justify-content: flex-start;
+
+        .skills-list-item {
+          margin: 0.5em 0.25em;
+        }
       }
     }
   }
@@ -107,7 +117,7 @@
         justify-content: flex-start;
 
         .skills-list-item {
-          margin: 0.5em 0.5em;
+          margin: 0.5em 0.25em;
         }
       }
     }

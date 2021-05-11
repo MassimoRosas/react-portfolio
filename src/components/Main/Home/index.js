@@ -2,6 +2,7 @@ import React from 'react';
 
 import './home.scss';
 import avatar from '../../../assets/images/avatar.png';
+import cv from '../../../assets/images/cv-massimo-rosas-2021.pdf';
 
 const Home = () => (
   <section className="main-section main-section-home" id="home">
@@ -48,6 +49,9 @@ const Home = () => (
           en organisation et en relation client.
         </p>
       </div>
+    </div>
+    <div className="home-cv">
+      <a className="home-cv-link" href={cv} target="_blank" rel="noreferrer"><i className="fas fa-file-pdf" /><span>Visualiser mon CV</span></a>
     </div>
   </section>
 );

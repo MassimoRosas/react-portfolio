@@ -22,6 +22,18 @@ const Skills = () => (
       <li className="skills-list-item card"><i className="devicon-git-plain skills-list-item-icon" /><span className="skills-list-item-description">Git</span></li>
       <li className="skills-list-item card"><i className="devicon-github-original skills-list-item-icon" /><span className="skills-list-item-description">GitHub</span></li>
     </ul>
+    <br />
+    <br />
+    <ul className="skills-list">
+      <li className="skills-list-item card"><span className="skills-list-item-description">Organisation</span></li>
+      <li className="skills-list-item card"><span className="skills-list-item-description">Travail d'équipe</span></li>
+      <li className="skills-list-item card"><span className="skills-list-item-description">Autonomie</span></li>
+      <li className="skills-list-item card"><span className="skills-list-item-description">Curiosité</span></li>
+      <li className="skills-list-item card"><span className="skills-list-item-description">Persévérance</span></li>
+      <li className="skills-list-item card"><span className="skills-list-item-description">Rigueur</span></li>
+      <li className="skills-list-item card"><span className="skills-list-item-description">Réactivité</span></li>
+      <li className="skills-list-item card"><span className="skills-list-item-description">Communication</span></li>
+    </ul>
   </section>
 );
 

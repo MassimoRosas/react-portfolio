@@ -97,6 +97,35 @@
         }
       }
     }
+
+    .home-cv {
+      margin: 2em 0;
+
+      .home-cv-link {
+        font-size: 1.25em;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+          color: black;
+          text-shadow: 0.05em 0.05em 0.3em rgba(255,255,255,50%);
+          transition: all ease-in-out 0.25s;
+        }
+
+        &:not(:hover) {
+          transition: all ease-in-out 0.25s;
+        }
+
+        i {
+          font-size: 1.5em;
+        }
+
+        span {
+          margin-left: 0.5em;
+        }
+      }
+    }
   }
 
 }
