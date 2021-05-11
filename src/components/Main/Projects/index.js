@@ -1,11 +1,9 @@
 import React from 'react';
 
+import firstProjects from 'src/data/firstProjects';
+
 import './projects.scss';
 import FeelBetter from '../../../assets/images/FeelBetter.png';
-import reactConverter from '../../../assets/images/reactConverter.png';
-import reactDashboard from '../../../assets/images/reactDashboard.png';
-import reactGitHubApi from '../../../assets/images/reactGitHubApi.png';
-import reactTodoList from '../../../assets/images/reactTodoList.png';
 
 const Projects = () => (
   <section className="main-section main-section-projects" id="projects">
@@ -31,22 +29,12 @@ const Projects = () => (
       </div>
       <div className="projects-list-container">
         <ul className="projects-list">
-          <li className="projects-list-item card">
-            <a className="projects-list-item-link" href="https://react-converter.vercel.app/" target="_blank" rel="noreferrer"><img className="projects-list-item-preview" src={reactConverter} alt="react-converter preview" /></a>
-            <h3 className="projects-list-item-title">React Converter</h3>
-          </li>
-          <li className="projects-list-item card">
-            <a className="projects-list-item-link" href="https://react-social-media-dashboard.vercel.app/" target="_blank" rel="noreferrer"><img className="projects-list-item-preview" src={reactDashboard} alt="react-dashboard preview" /></a>
-            <h3 className="projects-list-item-title">React Social Media Dashboard</h3>
-          </li>
-          <li className="projects-list-item card">
-            <a className="projects-list-item-link" href="https://react-github-api-rosy.vercel.app/" target="_blank" rel="noreferrer"><img className="projects-list-item-preview" src={reactGitHubApi} alt="react-github-api preview" /></a>
-            <h3 className="projects-list-item-title">React GitHub API Search</h3>
-          </li>
-          <li className="projects-list-item card">
-            <a className="projects-list-item-link" href="https://react-todo-list-gray.vercel.app/" target="_blank" rel="noreferrer"><img className="projects-list-item-preview" src={reactTodoList} alt="react-to-do-list preview" /></a>
-            <h3 className="projects-list-item-title">React To-Do List</h3>
-          </li>
+          {firstProjects.map((project) => (
+            <li key={project.name} className="projects-list-item card">
+              <a className="projects-list-item-link" href={project.link} target="_blank" rel="noreferrer"><img className="projects-list-item-preview" src={project.src} alt={project.alt} /></a>
+              <h3 className="projects-list-item-title">{project.name}</h3>
+            </li>
+          ))}
         </ul>
       </div>
     </div>
