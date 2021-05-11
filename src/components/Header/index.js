@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import navbarLinks from 'src/data/navbarLinks';
+
 import './header.scss';
 
 const Header = () => {
@@ -36,121 +38,37 @@ const Header = () => {
         {toggleNav
         && (
           <ul className="header-navbar-links">
-            <a href="#home">
-              <li
-                className="header-navbar-links-single"
-                onClick={() => {
-                  document.querySelector('.menu').classList.toggle('opened');
-                  setToggleNav(false);
-                }}
-              >
-                Présentation
-              </li>
-            </a>
-            <a href="#career">
-              <li
-                className="header-navbar-links-single"
-                onClick={() => {
-                  document.querySelector('.menu').classList.toggle('opened');
-                  setToggleNav(false);
-                }}
-              >
-                Parcours
-              </li>
-            </a>
-            <a href="#skills">
-              <li
-                className="header-navbar-links-single"
-                onClick={() => {
-                  document.querySelector('.menu').classList.toggle('opened');
-                  setToggleNav(false);
-                }}
-              >
-                Compétences
-              </li>
-            </a>
-            <a href="#projects">
-              <li
-                className="header-navbar-links-single"
-                onClick={() => {
-                  document.querySelector('.menu').classList.toggle('opened');
-                  setToggleNav(false);
-                }}
-              >
-                Projets
-              </li>
-            </a>
-            <a href="#footer">
-              <li
-                className="header-navbar-links-single"
-                onClick={() => {
-                  document.querySelector('.menu').classList.toggle('opened');
-                  setToggleNav(false);
-                }}
-              >
-                Liens
-              </li>
-            </a>
+            {navbarLinks.map((navbarLink) => (
+              <a key={navbarLink.name} href={navbarLink.id}>
+                <li
+                  className="header-navbar-links-single"
+                  onClick={() => {
+                    document.querySelector('.menu').classList.toggle('opened');
+                    setToggleNav(false);
+                  }}
+                >
+                  {navbarLink.name}
+                </li>
+              </a>
+            ))}
           </ul>
         )}
         {!toggleNav
         && (
           <ul className="no-burger">
-            <a href="#home">
-              <li
-                className="header-navbar-links-single"
-                onClick={() => {
-                  document.querySelector('.menu').classList.toggle('opened');
-                  setToggleNav(false);
-                }}
-              >
-                Présentation
-              </li>
-            </a>
-            <a href="#career">
-              <li
-                className="header-navbar-links-single"
-                onClick={() => {
-                  document.querySelector('.menu').classList.toggle('opened');
-                  setToggleNav(false);
-                }}
-              >
-                Parcours
-              </li>
-            </a>
-            <a href="#skills">
-              <li
-                className="header-navbar-links-single"
-                onClick={() => {
-                  document.querySelector('.menu').classList.toggle('opened');
-                  setToggleNav(false);
-                }}
-              >
-                Compétences
-              </li>
-            </a>
-            <a href="#projects">
-              <li
-                className="header-navbar-links-single"
-                onClick={() => {
-                  document.querySelector('.menu').classList.toggle('opened');
-                  setToggleNav(false);
-                }}
-              >
-                Projets
-              </li>
-            </a>
-            <a href="#footer">
-              <li
-                className="header-navbar-links-single"
-                onClick={() => {
-                  document.querySelector('.menu').classList.toggle('opened');
-                  setToggleNav(false);
-                }}
-              >
-                Liens
-              </li>
-            </a>
+            {navbarLinks.map((navbarLink) => (
+              <a key={navbarLink.name} href={navbarLink.id}>
+                <li
+                  className="header-navbar-links-single"
+                  onClick={() => {
+                    document.querySelector('.menu').classList.toggle('opened');
+                    setToggleNav(false);
+                  }}
+                >
+                  {navbarLink.name}
+                </li>
+              </a>
+            ))}
           </ul>
         )}
       </nav>
