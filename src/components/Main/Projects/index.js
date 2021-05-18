@@ -1,6 +1,7 @@
 import React from 'react';
 
 import firstProjects from 'src/data/firstProjects';
+import secondProjects from 'src/data/secondProjects';
 
 import './projects.scss';
 import FeelBetter from '../../../assets/images/FeelBetter.png';
@@ -9,6 +10,7 @@ const Projects = () => (
   <section className="main-section main-section-projects" id="projects">
     <h2 className="projects-title">Projets</h2>
     <div className="projects-container">
+      {/* Projet Feel Better */}
       <div className="projects-highlight card">
         <img className="projects-highlight-preview" src={FeelBetter} alt="Aperçu Feel Better" />
         <div className="projects-highlight-description">
@@ -27,9 +29,21 @@ const Projects = () => (
         </div>
         <iframe className="projects-highlight-video" src="https://www.youtube.com/embed/sSp3eACAeU0?start=2365" title="Présentation YouTube Feel Better" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
       </div>
+      {/* 1ère liste de projets */}
       <div className="projects-list-container">
         <ul className="projects-list">
           {firstProjects.map((project) => (
+            <li key={project.name} className="projects-list-item card">
+              <a className="projects-list-item-link" href={project.link} target="_blank" rel="noreferrer"><img className="projects-list-item-preview" src={project.src} alt={project.alt} /></a>
+              <h3 className="projects-list-item-title">{project.name}</h3>
+            </li>
+          ))}
+        </ul>
+      </div>
+      {/* 2ème liste de projets */}
+      <div className="projects-list-container">
+        <ul className="projects-list">
+          {secondProjects.map((project) => (
             <li key={project.name} className="projects-list-item card">
               <a className="projects-list-item-link" href={project.link} target="_blank" rel="noreferrer"><img className="projects-list-item-preview" src={project.src} alt={project.alt} /></a>
               <h3 className="projects-list-item-title">{project.name}</h3>
