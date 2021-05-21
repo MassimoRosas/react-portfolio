@@ -1,22 +1,22 @@
 export default [
   {
     name: 'Présentation',
-    id: '#home',
+    id: 'home',
   },
   {
     name: 'Parcours',
-    id: '#career',
+    id: 'career',
   },
   {
     name: 'Compétences',
-    id: '#skills',
+    id: 'skills',
   },
   {
     name: 'Projets',
-    id: '#projects',
+    id: 'projects',
   },
   {
     name: 'Liens',
-    id: '#footer',
+    id: 'footer',
   },
 ];

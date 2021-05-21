@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 import navbarLinks from 'src/data/navbarLinks';
 
@@ -10,7 +11,13 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header-left-container">
-        <a href="#home"><i className="header-logo devicon-react-original" /> </a>
+        <Link
+          to="home"
+          smooth
+          duration={750}
+        >
+          <i className="header-logo devicon-react-original" />
+        </Link>
         <h2 className="header-title">Massimo Rosas</h2>
       </div>
       <nav className="header-navbar">
@@ -39,7 +46,13 @@ const Header = () => {
         && (
           <ul className="header-navbar-links">
             {navbarLinks.map((navbarLink) => (
-              <a key={navbarLink.name} href={navbarLink.id}>
+              <Link
+                key={navbarLink.name}
+                to={navbarLink.id}
+                spy
+                smooth
+                duration={750}
+              >
                 <li
                   className="header-navbar-links-single"
                   onClick={() => {
@@ -49,7 +62,7 @@ const Header = () => {
                 >
                   {navbarLink.name}
                 </li>
-              </a>
+              </Link>
             ))}
           </ul>
         )}
@@ -57,7 +70,13 @@ const Header = () => {
         && (
           <ul className="no-burger">
             {navbarLinks.map((navbarLink) => (
-              <a key={navbarLink.name} href={navbarLink.id}>
+              <Link
+                key={navbarLink.name}
+                to={navbarLink.id}
+                spy
+                smooth
+                duration={750}
+              >
                 <li
                   className="header-navbar-links-single"
                   onClick={() => {
@@ -67,7 +86,7 @@ const Header = () => {
                 >
                   {navbarLink.name}
                 </li>
-              </a>
+              </Link>
             ))}
           </ul>
         )}
