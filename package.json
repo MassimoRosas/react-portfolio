@@ -59,6 +59,7 @@
     "prop-types": "*",
     "react": "*",
     "react-dom": "*",
+    "react-reveal": "^1.2.2",
     "react-scroll": "^1.8.2"
   },
   "version": "1.0.0",
